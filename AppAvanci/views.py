@@ -3,8 +3,10 @@ from django.shortcuts import render
 
 # Create your views here.
 
+#si queremos usar CONTEXT, lo ponemos en el tercer parámetro de RENDER
+
 def mostrar_inicio(request):
-    return render(request, "AppAvanci/inicio.html")
+    return render(request, "AppAvanci/inicio.html") 
 
 def mostrar_cursos(request):
     return render(request, "AppAvanci/cursos.html")
