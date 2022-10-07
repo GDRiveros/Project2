@@ -17,9 +17,9 @@ from django.urls import path
 from AppAvanci.views import mostrar_inicio, mostrar_cursos, mostrar_entregables, mostrar_estudiantes, mostrar_profesores
 
 urlpatterns = [
-    path("inicio/", mostrar_inicio),
-    path("cursos/", mostrar_cursos),
-    path("profesores/", mostrar_profesores),
-    path("estudiantes/", mostrar_estudiantes),
-    path("entregables/", mostrar_entregables),
+    path("inicio/", mostrar_inicio, name="inicio"),
+    path("cursos/", mostrar_cursos, name="cursos"),
+    path("profesores/", mostrar_profesores, name="profesores"),
+    path("estudiantes/", mostrar_estudiantes, name="estudiantes"),
+    path("entregables/", mostrar_entregables, name="entregables"),
 ]
