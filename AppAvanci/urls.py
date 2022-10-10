@@ -14,7 +14,19 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.urls import path
-from AppAvanci.views import mostrar_inicio, mostrar_cursos, mostrar_entregables, mostrar_estudiantes, mostrar_profesores
+from AppAvanci.views import (
+    mostrar_inicio,
+    mostrar_cursos,
+    mostrar_entregables,
+    mostrar_estudiantes,
+    mostrar_profesores,
+    procesar_formulario,
+    procesar_formulario_2,
+    busqueda,
+    buscar,
+    busqueda_2,
+    buscar_2,
+) 
 
 urlpatterns = [
     path("inicio/", mostrar_inicio, name="inicio"),
@@ -22,4 +34,10 @@ urlpatterns = [
     path("profesores/", mostrar_profesores, name="profesores"),
     path("estudiantes/", mostrar_estudiantes, name="estudiantes"),
     path("entregables/", mostrar_entregables, name="entregables"),
+    path("formulario/", procesar_formulario, name="formulario"),
+    path("formulario-2/", procesar_formulario_2, name="formulario_2"),
+    path("busqueda", busqueda, name="busqueda"),
+    path("buscar/", buscar),
+    path("busqueda-2/", busqueda_2, name="busqueda-2"),
+    path("buscar-2/", buscar_2)
 ]

@@ -1,0 +1,12 @@
+{% extends "AppAvanci/padre.html" %}
+
+{% load static %}
+
+{% block contenidoquecambia %}
+
+<form action="/AppAvanci/buscar_2" method="GET">
+    <p><input type="number" name="camada" id="camada"></p>
+    <input type="submit" value="Buscar">
+</form>
+
+{% endblock %}
